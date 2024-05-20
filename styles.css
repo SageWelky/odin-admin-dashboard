@@ -54,16 +54,17 @@ h1 {
   padding-left: 30px;
 }
 
-#directory-container>img {
-  height: 90%;
+#directory-container>img, #options-container>img {
+  height: 50%;
   width: auto;
+  align-self: center;
+  justify-self: self;
 }
 
-#directory-container>a {
+#directory-container>a, #options-container>a {
   display: grid;
   justify-content: start;
   align-items: center;
-  padding: 15px;
   font-size: 22px;
   font-weight: 700;
 }
@@ -74,7 +75,7 @@ h1 {
   width: max(140px, 56%);
   align-self: center;
   justify-self: start;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 #options-container {
@@ -82,20 +83,6 @@ h1 {
   display: grid;
   grid-template: 1fr 1fr 1fr / 20% 1fr;
   padding-left: 30px;
-}
-
-#options-container>img {
-  height: 90%;
-  width: auto;
-}
-
-#options-container>a {
-  display: grid;
-  justify-content: start;
-  align-items: center;
-  padding: 15px;
-  font-size: 22px;
-  font-weight: 700;
 }
 
 #header-section {
