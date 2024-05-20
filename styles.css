@@ -12,8 +12,9 @@ body, :root, html {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template: 19% 38% 38% 1fr / 20% 55% 25%;
+  grid-template: minmax(155px, 19vh) minmax(330px, 37vh) minmax(330px, 37vh) 1fr / minmax(240px, 18%) minmax(622px, 58%) minmax(345px, 1fr);
   background-color: white;
+  gap: max(15px, 1%);
 }
 
 #nav-section {
@@ -25,7 +26,7 @@ body, :root, html {
   justify-self: start;
   color: white;
   display: grid;
-  grid-template: 10% 30% 20px 15% 1fr / 1fr;
+  grid-template: 2fr 6fr 20px 3fr 7fr / 1fr;
   gap: 20px;
 }
 
@@ -70,9 +71,10 @@ h1 {
 .nav-border-line {
   grid-area: 3 / 1 / span 1 / span 1;
   border-bottom: 1px solid darkgray;
-  width: 80%;
+  width: max(140px, 56%);
   align-self: center;
-  justify-self: center;
+  justify-self: start;
+  margin-left: 40px;
 }
 
 #options-container {
@@ -99,7 +101,6 @@ h1 {
 #header-section {
   grid-area: 1 / 2 / span 1 / span 2;
   align-self: center;
-  justify-self: center;
   border-radius: 20px;
   background-color: rgba(244,245,247,255);
   width: 98%;
@@ -175,14 +176,6 @@ h1 {
   flex-direction: column;
 }
 
-#announcements-section {
-  grid-area: 2 / 3 / span 1 / span 1;
-}
-
-#trending-section {
-  grid-area: 3 / 3 / span 1 / span 1;
-}
-
 .project-button-icon-container {
   margin-top: auto;
   width: 30%;
@@ -190,5 +183,41 @@ h1 {
   justify-self: flex-end;
   align-self: flex-end;
   justify-content: space-evenly;
-  color: black;
+}
+
+#announcements-section {
+  grid-area: 2 / 3 / span 1 / span 1;
+  width: 100%;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+#announcements-grid-layout {
+  background-color: rgb(244,245,247,255);
+  border-radius: 20px;
+  width: 90%;
+  justify-self: center;
+}
+
+.announcements-border-line {
+  border-bottom: 1px solid darkgray;
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+}
+
+#trending-section {
+  grid-area: 3 / 3 / span 1 / span 1;
+  width: 100%;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+#trending-grid-layout {
+  background-color: rgb(244,245,247,255);
+  border-radius: 20px;
+  width: 90%;
+  justify-self: center;
 }
