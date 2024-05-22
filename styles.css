@@ -24,6 +24,7 @@ html {
   display: grid;
   grid-template: minmax(175px, 19vh) minmax(350px, 39vh) minmax(330px, 35vh) 1fr / minmax(240px, 18%) minmax(622px, 58%) minmax(345px, 1fr);
   gap: calc(10px + 1%);
+  overflow-x: scroll;
 }
 
 h2 {
@@ -325,6 +326,8 @@ h1 {
   grid-area: 2 / 1 / span 1 / span 1;
   height: 100%;
   width: calc(180px + 7vw);
+  min-width: 280px;
+  overflow-x: hidden;
   background-color: rgb(244,245,247,255);
   border-radius: 20px;
   display: grid;
@@ -337,6 +340,7 @@ h1 {
   justify-content: start;
   height: 100%;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .news-title {
@@ -425,6 +429,8 @@ h1 {
   border-radius: 20px;
   height: 100%;
   width: calc(180px + 7vw);
+  min-width: 260px;
+  overflow-x: hidden;
   display: grid;
   grid-template-rows: auto;
   justify-content: start;
