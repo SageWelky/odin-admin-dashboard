@@ -35,6 +35,16 @@ em {
   color: #E0B50F;
 }
 
+.profile-pic-1:hover {
+  content:url(./assets/profilePicture1.gif);
+}
+
+.profile-pic-2:hover {
+  content:url(./assets/profilePicture2.gif);
+}
+.profile-pic-3:hover {
+  content:url(./assets/profilePicture3.gif);
+}
 
 
 
@@ -346,7 +356,7 @@ h1 {
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: hidden;
-  height: max(calc(10px + 1vh), calc(10vh - 40px));
+  height: max(calc(10px + 1vh), calc(10vh - 35px));
   align-self: start;
   font-weight: 300;
   font-size: 12px;
@@ -357,25 +367,25 @@ h1 {
 }
 
 .news-title::before {
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 0%, whitesmoke 70%),
-              linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, whitesmoke 90%);
+  background: linear-gradient( 168deg, rgba(255, 255, 255, 0) 0%, whitesmoke 99%),
+              linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, whitesmoke 95%);
   content: '\200C';
   display: block;
   position: absolute;
   right: 0;
-  top: calc(5vh - 0.8em + 0.86em);
+  top:max(calc(24px + 0.2vh), calc(10vh - 40px));
   width: 300px;
   text-align: center;
   font-size: 2em;
 }
 
 .news-description::before {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, whitesmoke 90%);
+  background: linear-gradient( 90deg, rgba(255, 255, 255, 0) 0%, whitesmoke 70%);
   content: '\200C';
   display: block;
   position: absolute;
   right: 0;
-  top: calc(5vh - 0.6em);
+  top: max(calc(2px + 0.2vh), calc(10vh - 47px));
   width: 100%;
   text-align: center;
 }
