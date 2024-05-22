@@ -120,7 +120,7 @@ h1 {
   height: 90%;
   color: black;
   display: grid;
-  grid-template: 1fr 1fr 10px / 6fr 4fr;
+  grid-template: 1fr 1fr 12px / 6fr 4fr;
   column-gap: 30px;
 }
 
@@ -189,11 +189,10 @@ h1 {
 
 #header-greeting-container>.profile-picture {
   grid-area: 1 / 1 / span 2 / span 1;
-  align-self: center;
+  align-self: end;
   justify-self: center;
   width: min(80px, 80%);
   height: auto;
-  justify-self: start;
 }
 
 #header-greeting-container>span:first-of-type {
